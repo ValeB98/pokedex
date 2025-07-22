@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!--indica que este archivo es un documento html5-->
+<html lang="en"> <!--abre el html y le dice al navegador que el idioma principal es ingles-->
+<head> <!--empieza la cabecera del documento-->
+  <meta charset="UTF-8" /> <!--define la codificacion de caracteres para mostrar acentos y simbolos-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--hace que se vea bien en pantallas pequeñas como celulares-->
+  <title>Pokedex de Valeria</title> <!--titulo que aparece en la pestaña del navegador-->
+  <link rel="stylesheet" href="styles.css" /> <!--conecta el archivo de estilos css externo-->
+  <script defer src="script.js"></script> <!--carga el archivo javascript al final, despues de cargar el html-->
+</head>
+<body> <!--abre el cuerpo del documento, donde va el contenido visible-->
+
+  <div class="background"> <!--contenedor para el fondo animado-->
+    <div class="pokeballs-container"> <!--contenedor de todas las pokebolas-->
+  <div class="pokeball" style="top: 3%; left: 20%; animation-delay: 0s;"></div>
+  <div class="pokeball" style="top: 6%; left: 70%; animation-delay: 1s;"></div>
+  <div class="pokeball" style="top: 65%; left: 40%; animation-delay: 2s;"></div>
+  <div class="pokeball" style="top: 49%; left: 80%; animation-delay: 3s;"></div>
+  <div class="pokeball" style="top: 85%; left: 10%; animation-delay: 4s;"></div>
+  <div class="pokeball" style="top: 91%; left: 90%; animation-delay: 5s;"></div>
+</div>
+  </div>
+
+  <main class="pokedex"> <!--seccion principal con clase pokedex-->
+    <header> <!--encabezado de la pokedex-->
+      <h1>Pokédex</h1> <!--titulo grande que dice "pokédex"-->
+      <input id="search" type="text" placeholder="Busca un Pokémon por nombre o ID..."> <!--campo para escribir el nombre o id del pokemon-->
+      <button id="random-btn">Pokémon aleatorio</button><!--boton aleatorio de pokemon-->
+    </header>
+
+    <section id="pokemon-info"> <!--seccion donde se muestra la informacion del pokemon-->
+      <div class="screen"> <!--pantalla interna estilo consola-->
+        <div id="pokemon-image"></div> <!--aqui va la imagen del pokemon-->
+        <div class="details"> <!--contenedor de detalles del pokemon-->
+          <h2 id="pokemon-name">Nombre</h2> <!--nombre del pokemon-->
+          <p><strong>ID:</strong> <span id="pokemon-id"></span></p> <!--id del pokemon-->
+          <p><strong>Tipo:</strong> <span id="pokemon-type"></span></p> <!--tipo de pokemon-->
+          <p><strong>Peso:</strong> <span id="pokemon-weight"></span></p> <!--peso del pokemon-->
+          <p><strong>Altura:</strong> <span id="pokemon-height"></span></p> <!--altura del pokemon-->
+
+          <img src="pikachu.png" alt="Pikachu" class="pikachu"> <!--imagen de pikachu-->
+
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
